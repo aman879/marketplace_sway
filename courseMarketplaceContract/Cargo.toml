@@ -1,0 +1,16 @@
+[package]
+name = "courseMarketplaceContract"
+description = "A cargo-generate template for Rust + Sway integration testing."
+version = "0.1.0"
+edition = "2021"
+authors = ["Aman kumar <aman9693kumar@gmail.com>"]
+license = "Apache-2.0"
+
+[dev-dependencies]
+fuels = "0.66.1"
+tokio = { version = "1.12", features = ["rt", "macros"] }
+
+[[test]]
+harness = true
+name = "integration_tests"
+path = "tests/harness.rs"
